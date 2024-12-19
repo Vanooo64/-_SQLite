@@ -5,7 +5,7 @@ with sq.connect('saper.db') as con: #контекст менеджер відк�
 
     cur.execute("DROP TABLE IF EXISTS users") #видаленння таблоиці
     cur.execute("""CREATE TABLE IF NOT EXISTS users (
-    user_id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_id INTEGER PRIMARY KEY ,
     name TEXT NOT NULL DEFAULT 1,
     sex INTEGER NOT NULL DEFAULT 1,
     old INTEGER,
